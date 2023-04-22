@@ -1,0 +1,438 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Cao Nguyen Hai Linh 
+ID: s3978387
+Acknowledgement: 
+Navigation Bar: https://github.com/m-mourouh/Hamburger-Menu-With-HTML-and-CSS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Sequence Book Shop - Non-Fiction</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class='nav-bar'>
+            <div class='logo'><a href='index.html'><img src='logo.png' alt="last sequence logo"></a></div>
+            <input type='checkbox' id='check'>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class="breadcrumb">
+            <p><a href="index.html">Home</a> > <a href="nonfiction.html">Non-Fiction</a></p>
+        </div>
+        <section class="category-main">
+            <div class="side-list">
+                <ul class="cate-list">
+                    <h3>Category</h3>
+                    <li><a href="fiction.html">Fiction</a>
+                        <ul class="subcate-list">
+                            <li><a href="fiction.html#adventure">Adventure</a></li>
+                            <li><a href="fiction.html#crime">Crime</a></li>
+                            <li><a href="fiction.html#fantasy">Fantasy</a></li>
+                            <li><a href="fiction.html#tragedy">Tragedy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="nonfiction.html">Non-Fiction</a>
+                        <ul class="subcate-list">
+                            <li><a href="#biography">Biography</a></li>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="#philosophy">Philosophy</a></li>
+                            <li><a href="#science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="picturebook.html">Picture Books</a>
+                        <ul class="subcate-list">
+                            <li><a href="picturebook.html#picfantasy">Fantasy</a></li>
+                            <li><a href="picturebook.html#folklore">Folklore</a></li>
+                            <li><a href="picturebook.html#poetry">Poetry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="cate-main-content">
+                <h1>Non-Fiction</h1>
+                <div class="book-list">
+                    <h3 id="biography">Biography</h3>
+                    <div class="subcate">
+                        <div class="book">
+                            <a href="angela.html"><img src="./book-img/angela-1.jpeg" alt="angela's ashes cover"></a>
+                            <h4><a href="angela.html">Angela's Ashes</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h5>$5.20</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="angela.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="papillon.html"><img src="./book-img/papillon-1.jpg" alt="papillon cover"></a>
+                            <h4><a href="papillon.html">Papillon</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$5.45</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="papillon.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="tuesday.html"><img src="./book-img/tuesday-1.webp" alt="tuesdays with morrie cover"></a>
+                            <h4><a href="tuesday.html">Tuesdays with Morrie</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-solid fa-star-half-stroke"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$4.95</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="tuesday.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <h3 id="history">History</h3>
+                    <div class="subcate">
+                        <div class="book">
+                            <a href="missi.html"><img src="./book-img/missi-1.png" alt="life on the mississippi cover"></a>
+                            <h4><a href="missi.html">Life On The Mississippi</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h5>$5.70</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="missi.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="prince.html"><img src="./book-img/prince-1.jpg" alt="the prince cover"></a>
+                            <h4><a href="prince.html">The Prince</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$5.15</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="prince.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="war.html"><img src="./book-img/war-1.webp" alt="the art of war cover"></a>
+                            <h4><a href="war.html">The Art of War</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$8.90</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="war.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="diary.html"><img src="./book-img/diary-1.webp" alt="the diary of a young girl cover"></a>
+                            <h4><a href="diary.html">The Diary Of A Young Girl</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$6.40</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="diary.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="democracy.html"><img src="./book-img/democracy-1.jpeg" alt="democracy in america cover"></a>
+                            <h4><a href="democracy.html">Democracy in America</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-solid fa-star-half-stroke"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$5.00</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="democracy.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 id="philosophy">Philosophy</h3>
+                    <div class="subcate">
+                        <div class="book">
+                            <a href="liberty.html"><img src="./book-img/liberty-1.jpg" alt="on liberty cover"></a>
+                            <h4><a href="liberty.html">On Liberty</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h5>$4.80</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="liberty.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="communist.html"><img src="./book-img/communist-1.jpeg" alt="the communist manifesto cover"></a>
+                            <h4><a href="communist.html">The Communist Manifesto</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$7.25</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="communist.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="leviathan.html"><img src="./book-img/leviathan-1.jpeg" alt="leviathan cover"></a>
+                            <h4><a href="leviathan.html">Leviathan</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$7.80</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="leviathan.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="republic.html"><img src="./book-img/republic-1.jpeg" alt="the republic cover"></a>
+                            <h4><a href="republic.html">The Republic</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-solid fa-star-half-stroke"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <h5>$5.25</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="republic.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="utopia.html"><img src="./book-img/utopia-1.jpg" alt="utopia cover"></a>
+                            <h4><a href="utopia.html">Utopia</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-solid fa-star-half-stroke"></span>
+                            </div>
+                            <h5>$7.00</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="utopia.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 id="science">Science</h3>
+                    <div class="subcate">
+                        <div class="book">
+                            <a href="origin.html"><img src="./book-img/origin-1.jpg" alt="the origin of species cover"></a>
+                            <h4><a href="origin.html">The Origin of Species</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h5>$7.40</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="origin.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="time.html"><img src="./book-img/time-1.jpeg" alt="a brief history of time cover"></a>
+                            <h4><a href="time.html">A Brief History of Time</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa-solid fa-star-half-stroke"></span>
+                            </div>
+                            <h5>$6.10</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="time.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <a href="silent.html"><img src="./book-img/silent-1.jpg" alt="silent spring cover"></a>
+                            <h4><a href="silent.html">Silent Spring</a></h4>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h5>$9.40</h5>
+                            <div class="button-container">
+                                <div class="detail-button"><a href="silent.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                                </div>
+                                <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-nav">
+        <div class="footer-container">
+            <img src="logo.png" alt="last sequence logo">
+            <ul class="footer-contact">
+                <li><i class="fa-solid fa-circle-info"></i><a href=""> About us</a></li>
+                <li><i class="fa-solid fa-square-envelope"></i><a href="mailto:lastsequence@gmail.com"> Email Support: lastsequence@gmail.com</a></li>
+                <li><i class="fa-solid fa-square-phone"></i><a href="tel:09012345678"> 09012345678</a></li>
+            </ul>
+            <div class="social-media">
+                Follow us on: <a class="social-account" href=""><i class="fa-brands fa-facebook-f"></i></a><a class="social-account" href=""><i class="fa-brands fa-instagram"></i></a><a class="social-account" href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-container">
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Copyright</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Carrers</a></li>
+            </ul>
+        </div>
+        <div class="footer-container" id="footer-last">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </div>
+        </div>
+        <p>© Copyright 2023 by Linh Cao</p>
+    </footer>
+</body>
+</html>

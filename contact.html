@@ -1,0 +1,141 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Cao Nguyen Hai Linh 
+ID: s3978387
+Acknowledgement: 
+Navigation Bar: https://github.com/m-mourouh/Hamburger-Menu-With-HTML-and-CSS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Sequence Book Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class='nav-bar'>
+            <div class='logo'><a href='index.html'><img src='logo.png' alt="last sequence logo"></a></div>
+            <input type='checkbox' id='check'>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    </header>
+    <main class="contact-main">
+        <video autoplay muted loop id="bg-video">
+            <source src="./book-img/contact-bg.mp4" type="video/mp4">
+        </video>
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <form action="form-processing" method="get" id="contact-form">
+                <div class="form-field">
+                    <label for="purpose">Contact Purpose:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="sell">I want to sell books </option>
+                        <option value="buy">I want to buy books </option> 
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-field" id="checkbox">
+                    <p>Contact Preference:</p>
+                    <div class="contact-pref">
+                        <input type="checkbox" id="by-email" name="contact-pref" value="by email" required>
+                        <label for="by-email">By email</label>
+                    </div>
+                    <div class="contact-pref">
+                        <input type="checkbox" id="by-phone" name="contact-pref" value="by phone" required>
+                        <label for="by-phone">By phone</label>
+                    </div>
+                </div>
+                <div class="form-field" id="radio">
+                    <p>Receive Weekly Newsletter:</p>
+                    <div class="newsletter">
+                        <input type="radio" id="yes" name="newsletter" value="yes" checked required>
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="newsletter">
+                        <input type="radio" id="no" name="newsletter" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="note">Extra Note:</label>
+                    <input type="text" id="note" name="note" placeholder="Leave any extra note here">
+                </div>
+                <div class="contact-button">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-nav">
+        <div class="footer-container">
+            <img src="logo.png" alt="last sequence logo">
+            <ul class="footer-contact">
+                <li><i class="fa-solid fa-address-book"></i><a href=""> Contact us</a></li>
+                <li><i class="fa-solid fa-square-envelope"></i><a href="mailto:lastsequence@gmail.com"> Email Support: lastsequence@gmail.com</a></li>
+                <li><i class="fa-solid fa-square-phone"></i><a href="tel:09012345678"> 09012345678</a></li>
+            </ul>
+            <div class="social-media">
+                Follow us on: <a class="social-account" href=""><i class="fa-brands fa-facebook-f"></i></a><a class="social-account" href=""><i class="fa-brands fa-instagram"></i></a><a class="social-account" href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-container">
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Copyright</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Carrers</a></li>
+            </ul>
+        </div>
+        <div class="footer-container" id="footer-last">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </div>
+        </div>
+        <p>© Copyright 2023 by Linh Cao</p>
+    </footer>
+</body>
+</html>

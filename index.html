@@ -1,0 +1,314 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Cao Nguyen Hai Linh 
+ID: s3978387
+Acknowledgement: 
+Navigation Bar: https://github.com/m-mourouh/Hamburger-Menu-With-HTML-and-CSS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Sequence Book Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class='nav-bar'>
+            <div class='logo'><a href='index.html'><img src='logo.png' alt="last sequence logo"></a></div>
+            <input type='checkbox' id='check'>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <div class="banner">
+        <img src="banner.jpg" alt="a photo of library">
+        <h1>The Best Collection Of Must-Read Classic Books</h1>
+        <a href="#best" type="button">Shop Now</a>
+    </div>
+    </header>
+    <main>
+        <h1>Explore Our Best-Sellers</h1>
+        <section class="best" id="best">
+            <h2>Best of Fiction Books</h2>
+            <div class="best-cate">
+                <div class="best-subcate">
+                    <a href="alice.html"><img src="./book-img/alice-1.jpeg" alt="alice'adventure in wonderland cover"></a>
+                    <h4><a href="alice.html">Alice's Adventures in Wonderland</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$5.90</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="alice.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-subcate">
+                    <a href="cnp.html"><img src="./book-img/cnp-1.jpeg" alt="crime and punishment cover"></a>
+                    <h4><a href="cnp.html">Crime and Punishment</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$6.50</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="cnp.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-subcate">
+                    <a href="rnj.html"><img src="./book-img/rnj-1.jpeg" alt="romeo and juliet cover"></a>
+                    id='check'><h4><a href="rnj.html">Romeo and Juliet</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$6.05</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="rnj.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3><a href="fiction.html">View more fiction book <i class="fa-solid fa-angles-right"></i></a></h3>
+            <h2>Best of Non-Fiction Books</h2>
+            <div class="best-cate">
+                <div class="best-subcate">
+                    <a href="origin.html"><img src="./book-img/origin-1.jpg" alt="the origin of species cover"></a>
+                    <h4><a href="origin.html">The Origin of Species</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$7.40</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="origin.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-subcate">
+                    <a href="missi.html"><img src="./book-img/missi-1.png" alt="life on the mississippi cover"></a>
+                    <h4><a href="missi.html">Life on the Mississippi</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$5.70</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="missi.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-subcate">
+                    <a href="angela.html"><img src="./book-img/angela-1.jpeg" alt="angela's ashes cover"></a>
+                    <h4><a href="angela.html">Angela's Ashes</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$5.20</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="angela.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3><a href="nonfiction.html">View more non-fiction book <i class="fa-solid fa-angles-right"></i></a></h3>
+            <h2>Best of Picture Books</h2>
+            <div class="best-cate">
+                <div class="best-subcate">
+                    <a href="madeline.html"><img src="./book-img/madeline-1.jpeg" alt="madeline cover"></a>
+                    <h4><a href="madeline.html">Madeline</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$4.30</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="madeline.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-subcate">
+                    <a href="hen.html"><img src="./book-img/hen-1.jpeg" alt="the red little hen cover"></a>
+                    <h4><a href="hen.html">The Little Red Hen</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$3.80</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="hen.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-subcate">
+                    <a href="lilpri.html"><img src="./book-img/lilpri-1.jpeg" alt="the little prince cover"></a>
+                    <h4><a href="lilpri.html">The Little Prince</a></h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h5>$5.00</h5>
+                    <div class="button-container">
+                        <div class="detail-button">
+                        <a href="lilpri.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                        </div>
+                        <div class="add-to-cart">
+                            <a href="#" type="button">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3><a href="picturebook.html">View more picture book <i class="fa-solid fa-angles-right"></i></a></h3>
+        </section>
+        <section class="letter">
+            <h1>Receive Weekly Newsletter</h1>
+            <p>We send weekly emails with updates about new arrivals and interesting article for book lovers. Subscribe to stay in touch.</p>
+            <div class="subscribe">
+                <form action="form-processing" method="get" id="subscribe-form">
+                <label for="sub-email">Email:</label>
+                <input type="email" id="sub-email" name="sub-email" placeholder="Enter your email address">
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            </div>
+        </section>
+        <section class="faq">
+            <h1>FAQs</h1>
+            <details>
+                <summary>How do I order?</summary>
+                <p>First, you need to sign up for an account. After that, you can start add your favorite book to cart. Then, go to the cart, check if everything you need is there. Finally, click "Check Out" button to choose payment method and enter address.</p>
+            </details>
+            <details>
+                <summary>Do you provide worldwide shipping?</summary>
+                <p>Unfortunately, at the moment, we do not have this option.</p>
+            </details>
+            <details>
+                <summary>What is your return policy?</summary>
+                <p>You can return the book if the book is still sealed. In case the book is damaged in shipping process, you need to provide evidence so we can support your request.</p>
+            </details>
+            <details>
+                <summary>Do you have physical store?</summary>
+                <p>We are still working on our physical store, please stay tune!</p>
+            </details>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-nav">
+        <div class="footer-container">
+            <img src="logo.png" alt="last sequence logo">
+            <ul class="footer-contact">
+                <li><i class="fa-solid fa-circle-info"></i><a href=""> About us</a></li>
+                <li><i class="fa-solid fa-square-envelope"></i><a href="mailto:lastsequence@gmail.com"> Email Support: lastsequence@gmail.com</a></li>
+                <li><i class="fa-solid fa-square-phone"></i><a href="tel:09012345678"> 09012345678</a></li>
+            </ul>
+            <div class="social-media">
+                Follow us on: <a class="social-account" href=""><i class="fa-brands fa-facebook-f"></i></a><a class="social-account" href=""><i class="fa-brands fa-instagram"></i></a><a class="social-account" href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-container">
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Copyright</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Carrers</a></li>
+            </ul>
+        </div>
+        <div class="footer-container" id="footer-last">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </div>
+        </div>
+        <p>© Copyright 2023 by Linh Cao</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Cao Nguyen Hai Linh 
+ID: s3978387
+Acknowledgement: 
+Navigation Bar: https://github.com/m-mourouh/Hamburger-Menu-With-HTML-and-CSS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Sequence Book Shop - The Mitten</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class='nav-bar'>
+            <div class='logo'><a href='index.html'><img src='logo.png' alt="last sequence logo"></a></div>
+            <input type='checkbox' id='check'>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    </header>
+    <main class="detail-main">
+        <div class="breadcrumb">
+            <p><a href="index.html">Home</a> > <a href="picturebook.html">Picture Book</a> > <a href="mitten.html">The Mitten</a></p>
+        </div>
+        <section class="detail-main-content">
+            <div class="top-part">
+                <img class="large-img" src="./book-img/mitten-1.jpeg" alt="The Mitten cover">
+                <div class="small-img">
+                    <img src="./book-img/mitten-2.webp" alt="The Mitten">
+                    <img src="./book-img/mitten-3.jpg" alt="The Mitten">
+                    <img src="./book-img/mitten-4.jpeg" alt="The Mitten">
+                </div>
+                <div class="book-side">
+                    <div class="book-info">
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="rating-detail">(5/5 - 60 ratings)</span>
+                        </div>
+                        <h5>$5.80</h5>
+                    </div>
+                    <div class="book-button">
+                        <div class="add-to-cart">
+                            <a href="#" type="button"><i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                        </div>
+                        <div class="add-to-fav">
+                            <a href="#" type="button"><i class="fa-solid fa-heart"></i> Add to Favorite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-detail">
+                <h1>The Mitten <span class="author">by Jan Brett</span></h1>
+                <h3>About this book:</h3>
+                    <p>In this bestselling modern classic, a young boy's lost mitten leads to a charming snowy adventure. Jan Brett's beautiful retelling is a family favorite and this sturdy board book is perfect for little hands. When Nicki drops his white mitten in the snow, he goes on without realizing that it is missing. One by one, woodland animals find it and crawl in; first, a curious mole, then a rabbit, a badger and others, each one larger than the last. Finally, a big brown bear is followed in by a tiny brown mouse and what happens next makes for a wonderfully funny climax. As the story of the animals in the mitten unfolds, the reader can see Nicki's snowy outing in the borders of each page. In her distinctive style, Jan Brett brings the animals to life with warmth and humor, and her illustrations are full of visual delights and details faithful to the Ukrainian tradition from which the story comes.</p>
+            </div>
+            <div class="feedback">
+                <h2>Customer's feedbacks</h2>
+                <div class="review">
+                    <div class="user">
+                        <i class="fa-solid fa-user" id="user-icon"></i>Jennifer
+                    </div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>My daughter loves it!</p>
+                </div>
+                <div class="review">
+                    <div class="user">
+                        <i class="fa-solid fa-user" id="user-icon"></i>Max
+                    </div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>I love it.</p>
+                </div>
+                <div class="review">
+                    <div class="user">
+                        <i class="fa-solid fa-user" id="user-icon"></i>Alex
+                    </div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Great classic picture book!</p>
+                </div>
+                <button type="button">View More...<i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <div class="video">
+                <h2>Related Video:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d3rRWzdHv5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="suggestion">
+                <h2>You may also like:</h2>
+                <div class="best-cate">
+                    <div class="best-subcate">
+                        <a href="madeline.html"><img src="./book-img/madeline-1.jpeg" alt="madeline cover"></a>
+                        <h4><a href="madeline.html">Madeline</a></h4>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <h5>$4.30</h5>
+                        <div class="button-container">
+                            <div class="detail-button">
+                            <a href="madeline.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-subcate">
+                        <a href="hen.html"><img src="./book-img/hen-1.jpeg" alt="the red little hen cover"></a>
+                        <h4><a href="hen.html">The Little Red Hen</a></h4>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <h5>$3.80</h5>
+                        <div class="button-container">
+                            <div class="detail-button">
+                            <a href="hen.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-subcate">
+                        <a href="lilpri.html"><img src="./book-img/lilpri-1.jpeg" alt="the little prince cover"></a>
+                        <h4><a href="lilpri.html">The Little Prince</a></h4>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <h5>$5.00</h5>
+                        <div class="button-container">
+                            <div class="detail-button">
+                            <a href="lilpri.html" type="button" class="detail-button"><i class="fa-solid fa-circle-info"></i> View Detail</a>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#" type="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-nav">
+        <div class="footer-container">
+            <img src="logo.png" alt="last sequence logo">
+            <ul class="footer-contact">
+                <li><i class="fa-solid fa-circle-info"></i><a href=""> About us</a></li>
+                <li><i class="fa-solid fa-square-envelope"></i><a href="mailto:lastsequence@gmail.com"> Email Support: lastsequence@gmail.com</a></li>
+                <li><i class="fa-solid fa-square-phone"></i><a href="tel:09012345678"> 09012345678</a></li>
+            </ul>
+            <div class="social-media">
+                Follow us on: <a class="social-account" href=""><i class="fa-brands fa-facebook-f"></i></a><a class="social-account" href=""><i class="fa-brands fa-instagram"></i></a><a class="social-account" href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-container">
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Copyright</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Carrers</a></li>
+            </ul>
+        </div>
+        <div class="footer-container" id="footer-last">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="nonfiction.html">Non-Fiction</a></li>
+                <li><a href="picturebook.html">Picture Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </div>
+        </div>
+        <p>© Copyright 2023 by Linh Cao</p>
+    </footer>
+</body>
+</html>
