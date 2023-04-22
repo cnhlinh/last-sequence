@@ -194,6 +194,27 @@ main h1 {
     font-weight: 500;
 }
 
+.best h2 a {
+    text-decoration: none;
+    color:#680E0E;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.best h2 a {
+    text-decoration: none;
+    color:#680E0E;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.best h2 a:hover {
+    text-decoration: underline;
+}
+
 .best-cate {
     display: flex;
     justify-content: center;
