@@ -5,7 +5,8 @@ Semester: 2023A
 Assessment: Assignment 1
 Author: Cao Nguyen Hai Linh 
 ID: s3978387
-Acknowledgement: 
+Acknowledgement:
+Color pallete and font: https://www.behance.net/gallery/164642177/Antique-Furniture-Online-Store?tracking_source=search_projects%7Cvintage+website
 */ 
 
 *{
@@ -99,7 +100,7 @@ nav ul {
     display: none;
 }
 
-@media(max-width: 960px){
+@media(max-width: 1154px){
     .menu {
         flex-direction: column;
         align-items: center;
